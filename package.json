@@ -1,0 +1,29 @@
+{
+  "name": "site-builder-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Масштабируемая платформа для запуска мультибрендовых сайтов",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "create-site": "node tools/create-site/index.js",
+    "translate": "node tools/translate/index.js",
+    "deploy": "bash tools/deploy/deploy.sh"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "turbo": "^1.12.5",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.4"
+}
+
+
